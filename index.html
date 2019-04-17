@@ -39,30 +39,46 @@ class: center, middle
 # Agile Workflow
 
 ---
+class: center, middle
 
-# Context
+<img alt="traditional mona lisa" src="http://www.jpattonassociates.com/wp-content/uploads/2008/01/incrementing.jpg" />
 
-- The usual method is called Waterfall:
+<img alt="agile mona lisa" src="http://www.jpattonassociates.com/wp-content/uploads/2008/01/iterating.jpg" />
+
+---
+
+# Agile in Context
+
+- The traditional method is called Waterfall
+- Waterfall works well for tangible products, like building a house:<br>
   Architect &rarr; Contractor &rarr; Plumber
-- Digital projects are messier and need a different process
-- 
+- Digital products are messier and need a different process
+- [The Agile Manifesto](https://agilemanifesto.org/)
+
+---
+class: center, middle
+
+<img alt="waterfall vs agile" src="http://www.agilenutshell.com/assets/how-is-agile-different/continuous-activities.png" />
 
 ---
 
-TODO: two mona lisa paintings
+# Takeaways
 
----
+### .fourteen[Sprint]
 
-TODO: sprints and retrospectives
+A short period of time to work on an iteration of the solution
+
+### .fourteen[Retrospective]
+
+A collaborative discussion about how the sprint went and how things can be done differently
 
 ---
 
 # Further Reading
 
-- articles about agile classrooms
-- 
-- 
-- The Design Sprint book
+- [Embracing an Agile Mindset in Education](https://medium.com/laboratoria/the-agile-classroom-embracing-an-agile-mindset-in-education-ae0f19e801f3)
+- [Agile Based Learning](https://www.opencolleges.edu.au/informed/features/agile-based-learning-what-is-it-and-how-can-it-change-education/)
+- [Agile Classrooms](https://www.agileclassrooms.com/)
 
 ---
 name: pm-tools
@@ -72,11 +88,22 @@ class: center, middle
 
 ---
 
-TODO: toyota kanban
+# [Trello](https://trello.com/en-US)
+
+A digital bulletin board / whiteboard to
+
+- organize ideas
+- collaborate
+- track progress
+
+.fourteen[Side effect:] help students learn their own organization skills through example.
 
 ---
 
-todo: trello demo
+# Further Reading
+
+- [Trello for Education](https://trello.com/en-US/education), Trello's examples of classroom usage
+- [How Teachers Are Turning to Trello and Slack](https://www.edsurge.com/news/2015-07-28-no-slacking-off-how-savvy-teachers-are-turning-to-trello-and-slack), an article about a school treating itslef like a startup (more on Slack later)
 
 ---
 name: communication
@@ -86,11 +113,63 @@ class: center, middle
 
 ---
 
-todo: email is dying, async communication rising
+# Pop Quiz
+
+How often do your students check their email?
+
+---
+count: false
+
+# Pop Quiz
+
+How often do your students check their email?
+
+.fourteen[Average: zero times a day...]
+
+---
+count: false
+
+# Pop Quiz
+
+How often do your students check their email?
+
+.fourteen[Average: zero times a day...]
+
+How often do your students check their phone?
+
+---
+count: false
+
+# Pop Quiz
+
+How often do your students check their email?
+
+.fourteen[Average: zero times a day...]
+
+How often do your students check their phone?
+
+.fourteen[Let's leave that as a rhetorical question.]
 
 ---
 
-todo: slack demo
+# Common Email Replacements
+
+Email is slow and long-form, but a lot of communication can be short and snappy.
+
+- [Slack](https://slack.com/) - Chat application for businesses, popular with newer companies/startups
+- [Microsoft Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software) - Microsoft's Slack competitor (don't use Skype for this)
+- [Discord](https://discordapp.com/) - Chat application for gamers, but plenty of companies use it too
+
+---
+
+# Potential Uses
+
+- Workspace for Department/Program/Course
+- Workspaces have channels for different topics
+- Admins can add and manage members and roles
+- Add integrations for other services
+
+.fourteen[Students have a central place to help each other out.]
 
 ---
 name: html
@@ -100,22 +179,26 @@ class: center, middle
 
 ---
 
-todo: view source and quick explanation
+# What is HTML?
+
+- HyperText Markup Language
+- Every website is built out of it
+- Describe content so the computer understands how to display it
+
+Examples:
+
+- [google.com](https://google.com)
+- [ts-cset.github.io/cset-180](https://ts-cset.github.io/cset-180)
 
 ---
 
-todo: portal demo
+# What Can You Do With It?
 
----
-
-todo: this website!
-
----
-
-# Further Reading
-
-- codecademy
-- freecodecamp
+- Build sites for your courses
+- Use it in the Portal:
+  - Quiz questions
+  - Assignment Feeback
+  - pretty much any text box
 
 ---
 name: python
@@ -125,22 +208,52 @@ class: center, middle
 
 ---
 
-todo: quick explanation, what i use it for
+# What is Python?
+
+- Python is a simple programming language
+- You can use it to write scripts, small programs to handle repetitive tasks for you
+- Examples:
+  - A script to randomly pair up students for class work
+  - A script to download, rename, and organize assignment submissions
+  - A script to help with grading those assignments
+
+---
+
+```python
+students = [ ... ]
+random.shuffle(students)
+one = students[:len(students)//2]
+two = students[len(students)//2:]
+
+pairs = []
+for i in range(len(two)):
+    if i &gt;= len(one):
+        pairs.append(['', two[i]])
+    else:
+        pairs.append([one[i], two[i]])
+```
 
 ---
 
 # Further Reading
 
-- Automate the Boring Stuff
-- Learn Python the Hard Way
+- [codecademy.com](https://www.codecademy.com/catalog/subject/all), interactive learning tool for HTML, Python, and other languages
+- [freecodecamp.org](https://learn.freecodecamp.org/), another interactive learning tool for HTML and other languages
+- [HTML &amp; CSS](http://www.htmlandcssbook.com/), book for learning basic web development and design
+- [Learn Python the Hard Way](https://learnpythonthehardway.org/), book for learning basic Python
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/), practical examples of using Python to help with everyday tasks
 
 ---
 
 # More Stuff to Read
 
-- blogs and podcasts
-- Cult of Pedagogy
-- (eventually my own...)
+Look for blogs and podcasts!
+- [Cult of Pedagogy](https://www.cultofpedagogy.com/)
+- [patter](https://patthomson.net/)
+- [ProfHacker](http://profhacker.com/)
+
+Or start writing your own to share!
+- [zachfedor.me](http://zachfedor.me)
 
 ---
 class: middle, center
