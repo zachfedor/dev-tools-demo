@@ -1,0 +1,91 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fefefe;
+  color: #3b4252;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: calc(.75rem + 1.75vw);
+  margin: 8vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', Georgia, serif;
+  letter-spacing: 0.5px;
+}
+
+a, a:visited {
+  color: #8fbcbb;
+}
+
+a:hover, a:focus {
+  color: #bf616a;
+}
+
+code, pre, .remark-code,
+.remark-inline-code
+{
+  font-size: calc(.75rem + 1.75vw);
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 700;
+}
+em, i {
+  font-style: italics;
+}
+
+ol {
+  padding-left: 9vw;
+}
+
+.sans { font-family: 'Lato', Helvetica, Arial, sans-serif; }
+.serif { font-family: 'Crimson Text', Georgia, serif; }
+
+.zero { color: #2e3440; }
+.one { color: #3b4252; }
+.two { color: #434c5e; }
+.three { color: #4c566a; }
+.four { color: #d8dee9; }
+.five { color: #e5e9f0; }
+.six { color: #eceff4; }
+.seven { color: #8fbcbb; }
+.eight { color: #88c0d0; }
+.nine { color: #81a1c1; }
+.ten { color: #5e81ac; }
+.eleven { color: #bf616a; }
+.twelve { color: #d08770; }
+.thirteen { color: #ebcb8b; }
+.fourteen { color: #a3be8c; }
+.fifteen { color: #b48ead; }
+
+
+.strike { text-decoration: line-through; }
+
+
+.remark-container {
+  background: #2e3440;
+}
+
+.remark-slide-scaler {
+  -webkit-box-shadow: 0 0 40px #000;
+     -moz-box-shadow: 0 0 40px #000;
+          box-shadow: 0 0 40px #000;
+}
+
+.remark-slide-content {
+  background: #fefefe;
+  color: #3b4252;
+  font-size: calc(.75rem + 1.5vw);
+  padding: 3vw;
+}
+
+.remark-slide-number {
+  font-size: 2rem;
+}
